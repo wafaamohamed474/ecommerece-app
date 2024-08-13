@@ -1,38 +1,131 @@
-.App {
+.products {
+    text-align: center;
+  }
+  .products .row {
+    justify-content: center;
+    align-items: center;
+  }
+  .products h1 {
+    margin: 50px 0;
+    color: rgb(22, 113, 239);
+    font-weight: bold;
+  }
+  .card {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+  }
+  .buy-now {
+    color: green;
+    border: 1px solid green;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 6px 15px;
+    border-radius: 5px;
+    background-color: white;
+    transition: all 0.2s;
+    text-decoration: none;
+  }
+  .buy-now:hover {
+    background-color: green;
+    color: white;
+  }
+  .image-card {
+    width: 120px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  .main-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 600px;
+    margin: 30px auto;
+    flex-wrap: wrap;
+  }
+  .main-buttons .btn {
+    border: 1px solid rgba(0, 106, 255, 0.799);
+    color: rgba(0, 106, 255, 0.799);
+  }
+  .main-buttons .btn:hover {
+    background-color: rgba(0, 106, 255, 0.799);
+    color: white;
+  }
+  
+
+.viewPage .row{
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    margin-top: 60px;
+}
+
+.viewPage .image-side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-side img{
+    width: 300px;
+}
+.rate{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.login-box{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% , -50%);
+  width: 400px;
+  height: 70vh;
+  background-color: #eee;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  border-radius: 10px;
+  padding: 20px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+}
+.login-form input:not(.checkbox){
+width: 100%;
+border: none;
+border-radius: 5px;
+padding: 10px;
+margin-bottom: 20px;
+}
+.login-box .social{
+   margin: 20px 0;
+   display: flex;
+}
+.login-box .social i{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 40px;
+   height: 40px;
+   background-color: #d8d8d8;
+   border-radius: 50%;
+   margin: 0 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home{
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+ z-index: -1;
+  background-image: url(./assets/images/تصميم-متجر-إلكتروني.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
